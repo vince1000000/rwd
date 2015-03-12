@@ -1,0 +1,108 @@
+/* GLOBAL */
+body {
+	background: url("../img/bg.png");
+}
+
+/* LAYOUT */
+.container {
+	margin: 0 auto;
+	width: 90%; /* Designers Choice */
+	max-width: 1440px; /* Designers Choice */
+}
+
+article section {
+	float: left;
+	padding: 2%;
+	width: 46%;
+}
+
+/* Adpative Content */
+iframe, img {
+	max-width: 100%;
+	width: 100%;
+}
+
+/* Max dimensions for logo */
+#home {
+	max-width: 300px;
+	width: 300px;
+}
+
+/* Large Desktop minimum */
+@media (min-width: 1025px) {
+	
+	/* Yellow BG for testing */
+	body { background: yellow; }
+	
+	/* Show for Desktop */
+	.desktop-video {
+		height: 320px;
+		max-width: 640px;
+		width: 640px;
+	}
+
+	/* Hide for Mobile */
+	.mobile-video {
+		display: none;
+	}
+
+	/* Center Video */
+	main {
+		text-align: center;
+	}
+
+}
+
+/* Desktop (Standard) */
+@media (max-width: 1024px ) {
+	
+	/* Red BG for testing */
+	body { background: red; }
+	
+	/* Show for Desktop */
+	.desktop-video {
+		height: 320px;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	/* Hide for Mobile */
+	.mobile-video {
+		display: none;
+	}
+
+}
+
+/* Tablet  */
+@media (max-width: 768px ) {
+	
+	/* Green BG for Testing */
+	body { background: green; }
+	
+	/* Hide for Desktop */
+	.desktop-video {
+		display: none;
+	}
+
+	/* Hide for Mobile */
+	.mobile-video {
+		width: 100%;
+		display: block;
+	}
+
+	/* Single Colum Tablet */
+	article section {
+		float: none;
+		width: 100%;
+		width: 100%;
+	}
+
+}
+
+
+/* Mobile (Landscape) */
+@media (max-width: 480px ) {
+	
+	/* Blue BG for Testing */
+	body { background: blue; }
+}
